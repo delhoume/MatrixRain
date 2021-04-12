@@ -62,7 +62,7 @@ void lineDraw(int lineNum) {
 }
 
 int setYPos(int line_length) {
-  return line_length * -20;
+  return line_length * -char_height;
 }
 
 char getUnicodeChar() {
