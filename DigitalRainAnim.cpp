@@ -7,7 +7,7 @@
 #include "DigitalRainAnim.h"
 
 DigitalRainAnim::DigitalRainAnim() 
-: , spr(0), line_length(0), line_pos(0), line_speed(0){
+: spr(0), line_length(0), line_pos(0), line_speed(0){
 }
 
 DigitalRainAnim::~DigitalRainAnim() {
