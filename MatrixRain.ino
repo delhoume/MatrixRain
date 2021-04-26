@@ -7,8 +7,8 @@ DigitalRainAnim digitalRainAnim = DigitalRainAnim();
  
 void setup() {
   Serial.begin(115200);
-  SPIFFS.begin();
-  listFiles(); // Lists the files so you can see what is in the SPIFFS
+//  SPIFFS.begin();
+//  listFiles(); // Lists the files so you can see what is in the SPIFFS
 
   tft.begin();
   tft.setRotation(2);
