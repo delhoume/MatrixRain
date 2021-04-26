@@ -5,6 +5,7 @@
 */
 
 #include "DigitalRainAnim.h"
+#include "YuGothicUI-Regular14.h"
 
 DigitalRainAnim::DigitalRainAnim() 
 : spr(0), line_length(0), line_pos(0), line_speed(0){
@@ -37,7 +38,10 @@ void DigitalRainAnim::init(TFT_eSPI* tft, int new_line_len_min, int new_line_len
   // use same sprite for all lines  
   spr = new TFT_eSprite(tft);
   spr->createSprite(LINE_WIDTH, height);
-  spr->loadFont("YuGothicUI-Regular-14");
+  // from SPIFFS
+//  spr->loadFont("YuGothicUI-Regular-14");
+// from memory
+  spr->loadFont(YuGothicUIRegular14);
   prepareAnim();
 }
 
